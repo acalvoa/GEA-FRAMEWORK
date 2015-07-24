@@ -1,0 +1,13 @@
+package gea.controller;
+
+import gea.framework.Request;
+import gea.framework.Response;
+
+public class ControllerBase {
+	//ESTA CLASE SE UTILIZA PARA QUE LAS CLASES MODELOS CONSERVEN IDENTIDAD
+	//Y PUEDAN SER RECONOCIDAS POR EL CARGADOR AUTOMATICO DE MODELOS
+	//ES IMPORTANTE QUE CADA VEZ QUE SE CREE UN MODELO SE HEREDE ESTA CLASE
+	//DE LO CONTRARIO EL MODELO SERA IGNORADO POR EL LOADER
+	Request req;
+	Response res;
+}

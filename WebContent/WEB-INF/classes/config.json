@@ -1,0 +1,69 @@
+{
+///////////////////////
+// VARIABLES DE ENTORNO
+	//	 PATH DEL SISTEMA DE ARCHIVOS
+	"ASSET":{
+		"APP": "APP/app/app.js",
+		"LAYOUT": "APP/public_html/layout.jsp",
+		"ERROR": "APP/public_html/error.jsp",
+		"STYLES": "APP/public_html/styles/",
+		"HTML": "APP/public_html/partial/",
+		"CRYPTO": "APP/app/crypto/",
+		"CONFIG": "APP/app/config/const.jsp",
+		"DEPENDENCE": "APP/app/dep/",
+		"CSSDEPENDENCE": "APP/app/cssdep/",
+		"CONTROLLER": "APP/app/controller/"
+	},
+	// 	SE INTEGRAN LOS OBJETOS DE CRIPTOGRAFIA
+	"CRYPTO":[
+		"aes",
+		"md5",
+		"pbkdf2",
+		"sha1",
+		"aesutil"
+	],
+	// 	SE DESCRIBE EN ORDEN SECUENCIAL LA CARGA DE LOS COMPONENTES GEA
+	"GEA":[
+		
+	],
+	// 	SE DESCRIBE EN ORDEN SECUENCIAL LA CARGA DE LAS DEPENDENCIAS
+	"DEPENDENCE":{
+		"INTERNAL":[
+			"jquery",
+			"jquery-ui",
+			"angular",
+			"bootstrap",
+			"bigInt",
+			"include",
+			"com",
+			"cookie",
+			"less",
+			"base64"
+		],
+		"EXTERNAL":[
+		],
+		"CSS":[
+			"normalize",
+			"jquery-ui",
+			"fontawesome",
+			"bootstrap",
+			"bootstrap-theme"
+		]
+	},
+	// 	SE DESCRIBE EN ORDEN SECUENCIAL EL ORDEN DE LA CARGA DE LOS PARTIAL
+	//	TODOS LOS LAYOUT ESTAN ASOCIADOS A UN ARCHIVO LESS QUE DEBE EXISTIR
+	// 	SINO ESTOS SERAN IGNORADOS DE LA ESTRUCTURA
+	"LAYOUT":[
+		"header.jsp",
+		"mapa.jsp",
+		"footer.jsp"
+	],
+	"STYLES":[
+		"style.less"
+	],
+	// 	SE DESCRIBE EN ORDEN SECUENCIAL LA CARGA DE LOS CONTROLARES
+	"CONTROLLER":[
+	]
+//	FIN VARIABLES DE ENTORNO
+// FIN VARIABLES DE APLICACION
+}
